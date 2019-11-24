@@ -10,6 +10,7 @@ public class MainCtrl {
 
     @RequestMapping("/index")
     public String index(){
+        log.info("success");
         return "home";
     }
 
