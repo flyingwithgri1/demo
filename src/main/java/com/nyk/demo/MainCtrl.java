@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MainCtrl {
 
-    @RequestMapping("/index")
-    public String index(){
-        log.info("success");
-        return "home";
+    @RequestMapping("/3_1_01A")
+    public String get3_1_01A(){
+        return "3_1_01a";
     }
 
     @RequestMapping("/3_1_02A")
