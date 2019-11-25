@@ -16,22 +16,22 @@ public class MainCtrl {
 
     @RequestMapping("/3_1_02A")
     public String get3_1_02A(){
-        return "3_1_02A";
+        return "3_1_02a";
     }
 
     @RequestMapping("/3_1_03A")
     public String get3_1_03A(){
-        return "3_1_03A";
+        return "3_1_03a";
     }
 
     @RequestMapping("/3_1_04A")
     public String get3_1_04A(){
-        return "3_1_04A";
+        return "3_1_04a";
     }
 
     @RequestMapping("/3_1_05A")
     public String get3_1_05A(){
-        return "3_1_05A";
+        return "3_1_05a";
     }
 
     @RequestMapping("/3_2_1")
