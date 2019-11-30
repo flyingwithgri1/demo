@@ -10,6 +10,10 @@ p{
 a{
     text-decoration: none;
 }
+h3{
+    padding: 0px;
+    margin: 0px;
+}
 .top{
     margin: 0px auto;
     padding: 0px;
