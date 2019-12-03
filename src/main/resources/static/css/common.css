@@ -40,16 +40,8 @@ h3{
     font-size: 33px;
     font-weight: 500;
     text-align: center;
-    background: url("/image/navigation3.png") no-repeat;
-    background-size: 100% 100%;
 }
-.navigation .txt{
-    width: 125px;
 
-}
-.navigation .txt:hover{
-    cursor:pointer;
-}
 .main{
     margin: 0 auto;
     /*background-color: red;*/
