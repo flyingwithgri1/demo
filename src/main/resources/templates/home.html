@@ -19,7 +19,7 @@
             width: 690px;
             height: 1000px;
             /*background-color: red;*/
-            padding: 20px 60px 0px 60px;
+            padding: 5px 60px 0px 60px;
             display: flex;
             flex-direction: row;
             flex-wrap:wrap;
@@ -73,7 +73,30 @@
             width: 210px;
             /*background-color: tomato;*/
             height: 1000px;
-            padding-top: 20px;
+            padding-top: 5px;
+        }
+        .main_right .item{
+            height: 283px;
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        .product_item{
+            width: 130px;
+            height: 310px;
+            position: relative;
+        }
+        .product_item .more{
+            background-color: #8BACCF;
+            border-radius: 8px;
+            text-align: center;
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+        }
+        .manager_name{
+            height: 25px;
+            position: relative;
+            border-bottom: 1px solid #212121;
         }
     </style>
 </head>
@@ -82,7 +105,16 @@
     <img src="/image/home_title.jpg" style="height: 200px; width: 1024px">
 </div>
 <div class="navigation">
-    这是导航
+    <div style="font-size:25px;padding: 5px;  margin: 0 auto; display: flex;flex-direction: row; width: 90%; height: 100%" >
+        <div class="txt">首页</div>
+        <div class="txt">公司简介</div>
+        <div class="txt">质量保证</div>
+        <div class="txt">企业动态</div>
+        <div class="txt">范例展示</div>
+        <div class="txt">产品展示</div>
+        <div class="txt">联系我们</div>
+    </div>
+
 </div>
 <div class="home_main">
     <div class="main_left">
@@ -105,8 +137,8 @@
         <div class="item">
             <div class="title">《范例展示</div>
             <div style="padding-top: 18px;padding-left: 9px;">
-                <img style="width: 160px;height: 138px;" src="/image/jingpin1.jpg">
-                <img style="width: 160px;height: 138px;" src="/image/jingpin2.jpg">
+                <img style="width: 160px;height: 138px;" src="/image/jingpin1.png">
+                <img style="width: 160px;height: 138px;" src="/image/jingpin2.png">
 
             </div>
         </div>
@@ -125,63 +157,63 @@
         <div class="item_show">
             <div style="height: 65px;width: 100%;text-align: center">产品展示</div>
             <div style="display: flex;">
-                <div style="width: 130px;height: 135px;border: black solid 1px;margin-right: 9px">
-                    <img src="/image/item1.jpg" style="width: 100%;height: 135px">
+                <div style="margin-right: 9px" class="product_item">
+                    <img src="/image/item1.png" style="width: 100%;height: 135px">
                     <div>
                         商品名称：LEAC丙烯酸聚合物水泥防水涂料LEAC-21、LEAC-22
                     </div>
                     <div>
                         商品编号：LEAC-21、LEAC-22
                     </div>
-                    <div style="background-color: #8BACCF; border-radius: 8px;text-align: center">
+                    <div class="more">
                         <a href="/3_1_01A" target="_blank">点击更多</a>
                     </div>
                 </div>
-                <div style="width: 130px;height: 135px;border: black solid 1px;margin-right: 9px">
-                    <img src="/image/item2.jpg" style="width: 100%;height: 135px">
+                <div style="margin-right: 9px" class="product_item">
+                    <img src="/image/item2.png" style="width: 100%;height: 135px">
                     <div>
                         商品名称：LEAC无机防水堵漏材料 LEAC-10、LEAC-11
                     </div>
                     <div>
                         商品编号：LEAC-10、LEAC-11
                     </div>
-                    <div style="background-color: #8BACCF; border-radius: 8px;text-align: center">
+                    <div class="more">
                         <a href="/3_1_02A" target="_blank">点击更多</a>
                     </div>
                 </div>
-                <div style="width: 130px;height: 135px;border: black solid 1px;margin-right: 9px">
-                    <img src="/image/item3.jpg" style="width: 100%;height: 135px">
+                <div style="margin-right: 9px" class="product_item">
+                    <img src="/image/item3.png" style="width: 100%;height: 135px">
                     <div>
                         商品名称：LEAC聚合物砂浆LEAC-13
                     </div>
                     <div>
                         商品编号：LEAC-13
                     </div>
-                    <div style="background-color: #8BACCF; border-radius: 8px;text-align: center">
+                    <div class="more">
                         <a href="/3_1_03A" target="_blank">点击更多</a>
                     </div>
                 </div>
-                <div style="width: 130px;height: 135px;border: black solid 1px;margin-right: 9px ">
-                    <img src="/image/item4.jpg" style="width: 100%;height: 135px">
+                <div style="margin-right: 9px" class="product_item">
+                    <img src="/image/item4.png" style="width: 100%;height: 135px">
                     <div>
                         商品名称：LEAC混凝土装饰材料 LEAC-24
                     </div>
                     <div>
                         商品编号：LEAC-14
                     </div>
-                    <div style="background-color: #8BACCF; border-radius: 8px;text-align: center">
+                    <div class="more">
                         <a href="/3_1_04A" target="_blank">点击更多</a>
                     </div>
                 </div>
-                <div style="width: 130px;height: 135px;border: black solid 1px">
-                    <img src="/image/item5.jpg" style="width: 100%;height: 135px">
+                <div  class="product_item">
+                    <img src="/image/item5.png" style="width: 100%;height: 135px">
                     <div>
                         商品名称：BY水性厚质低处理防腐涂料
                     </div>
                     <div>
                         商品编号：BY-01
                     </div>
-                    <div style="background-color: #8BACCF; border-radius: 8px;text-align: center">
+                    <div class="more">
                         <a href="/3_1_05A" target="_blank">点击更多</a>
                     </div>
                 </div>
@@ -190,17 +222,22 @@
         </div>
     </div>
     <div class="main_right">
-        <div style="height: 283px;width: 100%;margin-bottom: 5px; ">
+        <div class="item">
             <div style="width: 100%; background-color: #1B5EA2;color: white;">《联系我们</div>
+            <div style="padding: 5px">
+                <div style="border-radius: 0px" class="manager_name">
+                    <p style="bottom: 0px; position: absolute">张经理</p>
+                </div>
+            </div>
         </div>
-        <div style="height: 283px;width: 100%;margin-bottom: 5px;">
+        <div class="item">
             <div style="width: 100%; background-color: #1B5EA2;color: white;">《建筑防水产品根本形态</div>
             <p style="padding: 5px; line-height: 25px;text-indent: 2em">
                 中核集团北京北研科技发展有限公司在目前全国三千多家防水生产企业中，隶属于核工业北京地质研究院，是唯一一家中央直属军工技术转民用生产的国有企业。<br><a href="/3_8_1" target="_blank" style="float: right">......更多</a>
             </p>
         </div>
-        <div style="height: 382px;width: 100%; ">
-            <div style="width: 100%; background-color: #1B5EA2;color: white;">《新闻动态（小视屏）</div>
+        <div style="height: 382px;" class="item">
+            <div style="width: 100%; background-color: #1B5EA2;color: white;">《新闻动态（小视频）</div>
         </div>
     </div>
 </div>
