@@ -44,7 +44,7 @@
             width: 690px;
             height: 1000px;
             /*background-color: red;*/
-            padding: 5px 60px 0px 60px;
+            padding: 5px 25px 0px 60px;
             display: flex;
             flex-direction: row;
             flex-wrap:wrap;
@@ -86,7 +86,7 @@
             color: white;
         }
         .item .dp{
-            padding: 15px;
+            padding: 5px;
         }
         .title_p{
             text-indent: 2em;
@@ -94,11 +94,62 @@
             font-size: 12pt;
             font-family: 宋体;
         }
+        .qydt{
+            line-height: 15px;
+            font-size: 15px;
+        }
         .main_right{
             width: 210px;
             /*background-color: tomato;*/
             height: 1000px;
             padding-top: 5px;
+        }
+        .manager_tel{
+            color: #457CB4;
+            font-weight: 700;
+            transform: scale(1,2);
+            -ms-transform: scale(1,2);
+            -webkit-transform: scale(1,2);
+            -moz-transform: scale(1,2);
+            -o-transform: scale(1,2);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-style: oblique;
+        }
+        .address{
+            color: #457CB4;
+            font-size: 8px;
+            margin-top: 10px;
+       }
+        .address2{
+            color: #457CB4;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+        .email{
+            font-size: 10px;
+            margin-top: 3px;
+        }
+        .welcome{
+            background-color: #b1b1b1;
+            width: 75%;
+            padding: 5px;
+            color: white;
+            font-size: 10px;
+            margin-top: 13px;
+        }
+        .banshichu{
+            font-size: 10px;
+            font-weight: 700;
+            margin-top: 13px;
+        }
+        .liuyan{
+            margin-top: 25px;
+        }
+        .wawa{
+            right: 3px;
+            top: 35px;
+            position: absolute;
         }
         .main_right .item{
             height: 283px;
@@ -162,6 +213,27 @@
         </div>
         <div class="item" style="margin-right: 5px">
             <div class="title">《企业动态</div>
+            <div class="dp">
+                <table class="qydt">
+                    <tr>
+                        <td>● 北京世桥生物制药有限公司施工...<a>更多</a></td>
+                    </tr>
+                    <tr>
+                        <td>● 某商场电梯坑维修...<a>更多</a></td>
+                    </tr>
+                    <tr>
+                        <td>● 唐山某学校房顶防水施工...<a>更多</a></td>
+                    </tr>
+                    <tr>
+                        <td>● 玉田佳成小区地下车库...<a>更多</a></td>
+                    </tr>
+                </table>
+                <div>
+                    <img src="/image/dt1.jpg" style="width: 105px;height: 80px;">
+                    <img src="/image/dt2.jpg" style="width: 105px;height: 80px;">
+                    <img src="/image/dt3.jpg" style="width: 105px;height: 80px;">
+                </div>
+            </div>
         </div>
         <div class="item">
             <div class="title">《范例展示</div>
@@ -184,7 +256,11 @@
             </p>
         </div>
         <div class="item_show">
-            <div style="height: 65px;width: 100%;text-align: center">产品展示</div>
+            <div style="height: 65px;width: 100%;text-align: center">
+                产品展示
+                <br>
+                PROJECT CASE
+            </div>
             <div style="display: flex;">
                 <div style="margin-right: 9px" class="product_item">
                     <img src="/image/item1.png" style="width: 100%;height: 135px">
@@ -251,15 +327,53 @@
         </div>
     </div>
     <div class="main_right">
-        <div class="item">
+        <div class="item" style="height: 333px;">
             <div style="width: 100%; background-color: #1B5EA2;color: white;">《联系我们</div>
-            <div class="right_text">
+            <div class="right_text" style="position: relative">
+                <div class="wawa">
+                    <img src="/image/wawa.png" style="width: 55px;height: 65px">
+                </div>
                 <div style="border-radius: 0px" class="manager_name">
                     <p style="bottom: 0px; position: absolute">张经理</p>
                 </div>
+                <div class="manager_tel" >
+                    15175278992
+                </div>
+                <div class="address">
+                    公司地址
+                </div>
+                <div class="address2">
+                    河北保定易县金台东路56号
+                </div>
+                <div class="email">
+                    邮箱：zs126yx@126.com
+                </div>
+                <div class="welcome">
+                    欢迎河北唐山、承德的朋友前来光临
+                </div>
+                <div class="banshichu">
+                    驻承德办事处地址：承德平泉
+                    <br>
+                    驻唐山办事处地址：唐山玉田
+                </div>
+                <div class="liuyan">
+                    <div style="display: flex">
+                        <div>
+                            <span style="font-size: 10px">客户留言板</span><span style="color: red;font-size: 10px">（点击留言）</span>
+                            <br>
+                            <span style="font-size: 10px">好评</span><span style="color: red;font-size: 10px">★★★★★</span>
+                        </div>
+                        <div style="border: 1px solid black;margin-right: 5px"></div>
+                        <div>
+                            <span style="font-weight: 900;font-size: 14px">中核集团</span>
+                            <br>
+                            <span style="font-weight: 900;font-size: 14px">CNNC</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="item">
+        <div class="item" style="height: 233px">
             <div style="width: 100%; background-color: #1B5EA2;color: white;">《建筑防水产品根本形态</div>
             <p style="padding: 5px; line-height: 25px;text-indent: 2em">
                 中核集团北京北研科技发展有限公司在目前全国三千多家防水生产企业中，隶属于核工业北京地质研究院，是唯一一家中央直属军工技术转民用生产的国有企业。<br><a href="/3_8_1" target="_blank" style="float: right">......更多</a>
@@ -279,8 +393,9 @@
     </div>
 </div>
 <div style="height: 140px;width: 1024px;background-color: #8BACCF;margin: 0 auto">
-    <div style="margin: 0 auto;width: 30%;display: flex;flex-direction: row;padding-top: 40px">
-        <div style="border-right: 1px solid #1B5EA2">网站地图/版权申明<br>备案号：00000000</div>
+    <div style="margin: 0 auto;width: 40%;display: flex;flex-direction: row;padding-top: 40px;color: gray">
+        <div>网站地图/版权申明<br>备案号：00000000</div>
+        <div style="border-right: 1px solid black;margin-left: 5px;margin-left: 5px"></div>
         <div>公司名称<br>GONGSIMINGCHENG</div>
         </div>
 </div>
