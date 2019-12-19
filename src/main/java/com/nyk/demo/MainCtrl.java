@@ -61,4 +61,14 @@ public class MainCtrl {
     public String get3_8_01A(){
         return "3_8_1";
     }
+
+    @RequestMapping("/enterprise_dynamic")
+    public String getEnterpriseDynamic(){
+        return "enterprise_dynamic";
+    }
+
+    @RequestMapping("/jingpin")
+    public String getJingPin(){
+        return "jingpin";
+    }
 }
