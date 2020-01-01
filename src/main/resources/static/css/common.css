@@ -62,7 +62,7 @@ h3{
 }
 
 .describe{
-    white-space: pre-wrap;
+/*    white-space: pre-wrap;*/
     font-weight: 800;
     font-size: 12px;
 }
