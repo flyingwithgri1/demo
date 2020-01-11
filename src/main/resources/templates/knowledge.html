@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="application/javascript" src="/js/jquery-1.7.js"></script>
+    <script type="application/javascript" src="/js/media.js"></script>
+
+    <script type="text/javascript">
+
+        $(function() {
+            $('.pdf').media({
+                width:     $(window).width(),
+                height:    $(window).height(),
+                autoplay:  true,
+                src:       '/pdf/x.pdf',
+                attrs:     { attr1:  'attrValue1',  attr2:  'attrValue2' },  // object/embed attrs
+                params:    { param1: 'paramValue1', param2: 'paramValue2' }, // object params/embed attrs
+                caption:   false // supress caption text
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div class="pdf"></div>
+</body>
+</html>

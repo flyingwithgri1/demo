@@ -1,4 +1,4 @@
-package com.nyk.demo;
+package com.nyk;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

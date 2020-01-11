@@ -71,4 +71,9 @@ public class MainCtrl {
     public String getJingPin(){
         return "jingpin";
     }
+
+    @RequestMapping("/knowledge")
+    public String getKnowledge(){
+        return "knowledge";
+    }
 }
