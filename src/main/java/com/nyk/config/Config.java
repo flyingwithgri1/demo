@@ -18,9 +18,9 @@ public class Config implements WebMvcConfigurer {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/video/**")
-                .addResourceLocations("file:E:/file/demo/video/");
+                .addResourceLocations("file:/opt/file/demo/video/");
         registry.addResourceHandler("/pdf/**")
-                .addResourceLocations("file:E:/file/demo/pdf/");
+                .addResourceLocations("file:/opt/file/demo/pdf/");
         log.info("0000000000000000000000000000000000");
     }
 }
