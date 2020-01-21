@@ -76,4 +76,14 @@ public class MainCtrl {
     public String getKnowledge(){
         return "knowledge";
     }
+
+    @RequestMapping("/word1")
+    public String getWord1(){
+        return "word1";
+    }
+
+    @RequestMapping("/word2")
+    public String getWord2(){
+        return "word2";
+    }
 }
