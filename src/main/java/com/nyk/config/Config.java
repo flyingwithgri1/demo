@@ -21,6 +21,5 @@ public class Config implements WebMvcConfigurer {
                 .addResourceLocations("file:/opt/file/demo/video/");
         registry.addResourceHandler("/pdf/**")
                 .addResourceLocations("file:/opt/file/demo/pdf/");
-        log.info("0000000000000000000000000000000000");
     }
 }

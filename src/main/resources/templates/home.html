@@ -198,6 +198,29 @@
     <script type="application/javascript" src="/js/video.js">
 
     </script>
+    <script type="application/javascript">
+        function hidder_video(){
+            var video_1 = document.getElementById("video_1");
+            var video_2 = document.getElementById("video_2");
+            var text_1 = document.getElementById("text_1");
+            var text_2 = document.getElementById("text_2");
+            var  d = new Date().getDate();
+            if( d%2 ==0){
+                video_1.style.display = 'none';
+                text_1.style.display = 'none';
+                video_2.style.display = '';
+                text_2.style.display = '';
+            }else{
+                video_2.style.display = 'none';
+                text_2.style.display = 'none';
+                video_1.style.display = '';
+                text_1.style.display = '';
+            }
+        }
+        window.onload = function(){
+            hidder_video();
+        }
+    </script>
 </head>
 <body>
 <div class="top" style=" height: 200px">
@@ -418,13 +441,15 @@
             </div>
         </div>
 
-        <div style="height: 235px;" class="item">
+        <div style="height: 235px;" class="item" >
             <div style="width: 100%; background-color: #1B5EA2;color: white;">《新闻动态（相关视频）</div>
             <div class="right_text">
                 <div style="border-bottom: 1px solid black;border-radius: 0px;margin-bottom: 2px;margin-left: 2px;margin-right: 2px"></div>
                 <!-- <video src="/video/2.mp4" controls="controls" style="width: 198px;height: 150px"></video>-->
-                <div style="border-bottom: 1px solid black;border-radius: 0px;margin-bottom: 2px;margin-left: 2px;margin-right: 2px">关于国家对RG防水体系技术的相关视频</div>
-                <video src="/video/2.mp4" controls="controls" style="width: 198px;height: 150px"></video>
+                <div id="text_1" style="border-bottom: 1px solid black;border-radius: 0px;margin-bottom: 2px;margin-left: 2px;margin-right: 2px">关于国家对RG防水体系技术的相关视频</div>
+                <video src="/video/2.mp4" id="video_1" controls="controls" style="width: 198px;height: 150px"></video>
+                <div id="text_2" style="border-bottom: 1px solid black;border-radius: 0px;margin-bottom: 2px;margin-left: 2px;margin-right: 2px">《品质》第247期-安得广厦千万间</div>
+                <video src="/video/quality.mp4" id="video_2" controls="controls" style="width: 198px;height: 150px"></video>
             </div>
         </div>
     </div>
