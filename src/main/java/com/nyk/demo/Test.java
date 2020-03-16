@@ -20,6 +20,29 @@ import java.util.List;
 public class Test {
 
     public static void main(String[] args) throws Throwable {
+        fileMerge();
+    }
+
+    //不行
+    public static void fileMerge() throws Throwable{
+        InputStream is = new FileInputStream(new File("C:\\Users\\addison\\Desktop\\a\\1.mp4"));
+        InputStream is2 = new FileInputStream(new File("C:\\Users\\addison\\Desktop\\a\\2.mp4"));
+        OutputStream os = new FileOutputStream(new File("C:\\Users\\addison\\Desktop\\a\\3.mp4"));
+
+        SequenceInputStream sequenceInputStream = new SequenceInputStream(is,
+                is2);
+        byte[] b = new byte[1024*2];
+        int len = 0;
+        while((len = sequenceInputStream.read(b)) != -1){
+            os.write(b);
+            os.flush();
+        }
+
+        os.flush();
+        os.close();
+    }
+
+    public static void videoFormat()throws Throwable {
         final String path = "E:\\file\\demo\\Word\\";
         final String file = "SBS防水卷材与LEAC防水涂料在防水工程应用中的优劣势对比.doc";
         InputStream input = new FileInputStream(path + file);
