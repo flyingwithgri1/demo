@@ -211,6 +211,7 @@
         li img{
             height: 200px;
             vertical-align: top;
+            width: 1024px;
         }
     </style>
     <script type="application/javascript" src="/js/video.js">
@@ -236,20 +237,34 @@
             }
         }
 
-        function change(){
-            var img1 = document.getElementById("img1");
-            var leftNum = parseInt(img1.style.left);
-            if(leftNum <= -3072){
-                leftNum = 0;
-            }else{
-                leftNum = leftNum - 1024 ;
+
+        function sleep(n){
+            var start = new Date().getTime();
+            while (true){
+                if (new Date().getTime() - start > n) {
+                    break;
+                }
             }
-            img1.style.left = leftNum + "px"
+
         }
         window.onload = function(){
             hidder_video();
             document.getElementById("img1").onclick=change;
-            window.setInterval(change,2000);
+            var img1 = document.getElementById("img1");
+            var leftNum = parseInt(img1.style.left);
+            window.setInterval(change,1);
+            function change(){
+                if(leftNum <= -4096){
+                    leftNum = 0;
+                }else{
+                    leftNum-- ;
+                }
+                img1.style.left = leftNum + "px"
+                console.log(leftNum % 40)
+                if(leftNum % 1025 == -0){//
+                    sleep(2000)
+                }
+            }
         }
 
     </script>
@@ -262,6 +277,7 @@
         <li><img src="/image/u1.jpg"></li>
         <li><img src="/image/u2.jpg"></li>
         <li><img src="/image/u3.jpg"></li>
+        <li><img src="/image/home_title.jpg"></li>
     </ul>
 </div>
 <div class="navigation_home">
