@@ -15,7 +15,7 @@ public class MainCtrl {
 
     @RequestMapping("/jslunbo")
     public String jslunbo(){
-        return "jslunbo";
+        return "home";
     }
 
     @RequestMapping("/3_1_01A")
