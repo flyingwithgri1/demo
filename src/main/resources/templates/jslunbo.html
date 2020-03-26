@@ -125,7 +125,7 @@
             color: #457CB4;
             font-size: 8px;
             margin-top: 10px;
-       }
+        }
         .address2{
             color: #457CB4;
             font-size: 12px;
@@ -194,6 +194,24 @@
             width: 1px;
             height: 1px;
         }
+
+        ul {
+            width: 1000%;
+            position: absolute;
+            list-style: none;
+            left: 0;
+            top: 0;
+        }
+
+        li {
+            float: left;
+            width: 1024px;
+        }
+
+        li img{
+            height: 200px;
+            vertical-align: top;
+        }
     </style>
     <script type="application/javascript" src="/js/video.js">
 
@@ -217,19 +235,40 @@
                 text_1.style.display = '';
             }
         }
+
+        function change(){
+            console.log(1)
+            var img1 = document.getElementById("img1");
+            var leftNum = parseInt(img1.style.left);
+            if(leftNum <= -3072){
+                leftNum = 0;
+            }else{
+                leftNum = leftNum - 1024 ;
+            }
+            img1.style.left = leftNum + "px"
+        }
         window.onload = function(){
             hidder_video();
+            document.getElementById("img1").onclick=change;
+            window.setInterval(change,2000);
         }
+
     </script>
 </head>
 <body>
-<div class="top" style=" height: 200px">
-    <img src="/image/home_title.jpg" style="height: 200px; width: 1024px">
+<div class="top" style=" height: 200px;width: 1024px;position: relative;
+				overflow: hidden;">
+    <ul style="margin: 0;padding: 0;left: 0px" id="img1">
+        <li><img src="/image/home_title.jpg" ></li>
+        <li><img src="/image/u1.jpg"></li>
+        <li><img src="/image/u2.jpg"></li>
+        <li><img src="/image/u3.jpg"></li>
+    </ul>
 </div>
 <div class="navigation_home">
     <div style="font-size:20px;padding-top: 8px;  margin: 0 auto; display: flex;flex-direction: row; width: 90%; height: 30px;font-weight: 900" >
         <div class="txt"><a href="/home" target="_blank">首页</a></div>
-<!--        <div class="line_navigation_home"> </div>-->
+        <!--        <div class="line_navigation_home"> </div>-->
         <div class="txt"><a href="3_2_1" target="_blank">公司简介</a></div>
         <div class="txt"><a href="3_3_1" target="_blank">质量保证</a></div>
         <div class="txt"><a href="enterprise_dynamic" target="_blank"> 企业动态</a></div>
@@ -300,9 +339,9 @@
         <div class="item_logo">
             <img src="/image/lvlogo.jpg" style="width: 85px;height: 85px; margin: 5px">
             <p style="margin-top: 2px"> 防水体系的性能<br>
-            RG防水体系由于其出色的环保性能，2007年编制出版了专用国际设计图集。<br>
-            RG防水体系以其出色环保性能，2009年首批通过环保部环境标志（绿色十环认证）<br>
-            RG防水体系以其质量上可靠的稳定性，2009年在行业中第一批纳入中国政府采购清单。<a href="/3_7_1" target="_blank" style="float: right">...更多</a>
+                RG防水体系由于其出色的环保性能，2007年编制出版了专用国际设计图集。<br>
+                RG防水体系以其出色环保性能，2009年首批通过环保部环境标志（绿色十环认证）<br>
+                RG防水体系以其质量上可靠的稳定性，2009年在行业中第一批纳入中国政府采购清单。<a href="/3_7_1" target="_blank" style="float: right">...更多</a>
             </p>
         </div>
         <div class="item_show">
@@ -459,7 +498,7 @@
         <div>网站地图/版权申明<br>备案号：00000000</div>
         <div style="border-right: 1px solid black;margin-left: 5px;margin-right: 5px"></div>
         <div>公司名称<br>GONGSIMINGCHENG</div>
-        </div>
+    </div>
 </div>
 </body>
 </html>

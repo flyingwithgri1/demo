@@ -12,6 +12,12 @@ public class MainCtrl {
     public String home(){
         return "home";
     }
+
+    @RequestMapping("/jslunbo")
+    public String jslunbo(){
+        return "jslunbo";
+    }
+
     @RequestMapping("/3_1_01A")
     public String get3_1_01A(){
         return "3_1_01a";
