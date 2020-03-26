@@ -20,7 +20,8 @@ import java.util.List;
 public class Test {
 
     public static void main(String[] args) throws Throwable {
-        fileMerge();
+//        fileMerge();
+        videoFormat();
     }
 
     //不行
@@ -44,7 +45,7 @@ public class Test {
 
     public static void videoFormat()throws Throwable {
         final String path = "E:\\file\\demo\\Word\\";
-        final String file = "SBS防水卷材与LEAC防水涂料在防水工程应用中的优劣势对比.doc";
+        final String file = "videoFormat.doc";
         InputStream input = new FileInputStream(path + file);
         HWPFDocument wordDocument = new HWPFDocument(input);
         WordToHtmlConverter wordToHtmlConverter = new WordToHtmlConverter(
@@ -81,6 +82,6 @@ public class Test {
         serializer.transform(domSource, streamResult);
         outStream.close();
         String content = new String(outStream.toByteArray());
-        FileUtils.writeStringToFile(new File(path, "1.html"), content, "utf-8");
+        FileUtils.writeStringToFile(new File(path, "word3.html"), content, "utf-8");
     }
 }

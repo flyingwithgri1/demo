@@ -92,4 +92,9 @@ public class MainCtrl {
     public String getWord2(){
         return "word2";
     }
+
+    @RequestMapping("/word3")
+    public String getWord3(){
+        return "word3";
+    }
 }
