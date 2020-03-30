@@ -26,7 +26,7 @@ public class Test {
 
     //不行
     public static void fileMerge() throws Throwable{
-        InputStream is = new FileInputStream(new File("C:\\Users\\addison\\Desktop\\a\\1.mp4"));
+        InputStream is = new FileInputStream(new File("E:\\缓冲文件\\1.mp4"));
         InputStream is2 = new FileInputStream(new File("C:\\Users\\addison\\Desktop\\a\\2.mp4"));
         OutputStream os = new FileOutputStream(new File("C:\\Users\\addison\\Desktop\\a\\3.mp4"));
 
