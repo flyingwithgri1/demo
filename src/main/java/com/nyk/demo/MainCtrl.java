@@ -8,13 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class MainCtrl {
 
-    @RequestMapping("/home")
+    @RequestMapping("/")
     public String home(){
-        return "home";
-    }
-
-    @RequestMapping("/jslunbo")
-    public String jslunbo(){
         return "home";
     }
 
