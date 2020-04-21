@@ -1,15 +1,19 @@
 package com.nyk.demo;
 
+import com.nyk.util.Utils;
 import lombok.extern.java.Log;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Log
 @Controller
 public class MainCtrl {
 
     @RequestMapping("/")
-    public String home(){
+    public String home(HttpServletRequest request){
+        log.info("ip地址: "+ Utils.getIpAddr(request));
         return "home";
     }
 
